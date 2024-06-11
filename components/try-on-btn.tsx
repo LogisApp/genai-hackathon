@@ -29,8 +29,10 @@ const TryOnButton = () => {
     // </Sheet>
     <Button
       className="w-32"
-      // TODO: REPLACE www.google.com with HF Space url
-      onClick={() => router.push("https://www.google.com/")}
+      // TODO: REPLACE this with our HF Space url
+      onClick={() =>
+        router.push("https://huggingface.co/spaces/yisol/IDM-VTON")
+      }
     >
       3D Try On
       <ArrowTopRightIcon className="w-4 h-4 ml-1" />
