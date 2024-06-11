@@ -9,9 +9,9 @@ const ProductCard = (props: ProductCardProps) => {
   return (
     <div
       key={id}
-      className="bg-white dark:bg-gray-950 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+      className="bg-white dark:bg-gray-950 rounded-lg shadow-sm hover:shadow-md transition-shadow border"
     >
-      <Link href="#" prefetch={false}>
+      <Link href={`/product/${id}`} prefetch={false}>
         <Image
           src={image}
           alt={name}

@@ -1,6 +1,6 @@
 export const products = [
     {
-        id: 1,
+        id: '1',
         name: "Classic White Tee",
         description: "A timeless essential for any wardrobe",
         price: 19.99,
@@ -8,7 +8,7 @@ export const products = [
         category: "Mens",
     },
     {
-        id: 2,
+        id: '2',
         name: "Floral Sundress",
         description: "Lightweight and breezy for summer days",
         price: 39.99,
@@ -16,7 +16,7 @@ export const products = [
         category: "Womens",
     },
     {
-        id: 3,
+        id: '3',
         name: "Slim Fit Chinos",
         description: "Versatile and comfortable chino pants",
         price: 29.99,
@@ -24,7 +24,7 @@ export const products = [
         category: "Mens",
     },
     {
-        id: 4,
+        id: '4',
         name: "Lace Blouse",
         description: "Elegant and feminine blouse with lace details",
         price: 24.99,
@@ -32,7 +32,7 @@ export const products = [
         category: "Womens",
     },
     {
-        id: 5,
+        id: '5',
         name: "Denim Jacket",
         description: "Classic denim jacket for any occasion",
         price: 49.99,
@@ -40,7 +40,7 @@ export const products = [
         category: "Mens",
     },
     {
-        id: 6,
+        id: '6',
         name: "Maxi Skirt",
         description: "Flowing and comfortable maxi skirt",
         price: 34.99,
@@ -48,7 +48,7 @@ export const products = [
         category: "Womens",
     },
     {
-        id: 7,
+        id: '7',
         name: "Striped Polo",
         description: "Classic polo shirt with a modern twist",
         price: 24.99,
@@ -56,7 +56,7 @@ export const products = [
         category: "Mens",
     },
     {
-        id: 8,
+        id: '8',
         name: "Pleated Midi Dress",
         description: "Elegant and sophisticated midi dress",
         price: 59.99,
