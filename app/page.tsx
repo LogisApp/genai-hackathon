@@ -7,22 +7,41 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useDebounceValue } from "usehooks-ts";
 
 type ProductType = (typeof products)[number];
 
 export default function Home() {
+  const [debouncedInput, setDebouncedInput] = useDebounceValue("", 500);
+
   const searchParams = useSearchParams();
   const filter = searchParams.get("filter");
   const [selectedProducts, setSelectedProducts] = useState<ProductType[]>([]);
+
   useEffect(() => {
-    if (!filter) {
+    if (!filter && !debouncedInput) {
       setSelectedProducts(products);
-    } else {
+    } else if (!filter) {
+      setSelectedProducts(
+        products.filter((product) =>
+          product.name.toLowerCase().includes(debouncedInput.toLowerCase()),
+        ),
+      );
+    } else if (!debouncedInput) {
       setSelectedProducts(
         products.filter((product) => product.category === filter),
       );
+    } else {
+      setSelectedProducts(
+        products.filter(
+          (product) =>
+            product.category === filter &&
+            product.name.toLowerCase().includes(debouncedInput.toLowerCase()),
+        ),
+      );
     }
-  }, [filter]);
+  }, [filter, debouncedInput]);
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-white dark:bg-gray-950 py-2 pl-12 pr-6 shadow-sm border-b">
@@ -47,6 +66,7 @@ export default function Home() {
               type="search"
               placeholder="Search products..."
               className="w-full bg-white dark:bg-gray-900 pl-10 pr-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-700 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              onChange={(e) => setDebouncedInput(e.target.value)}
             />
           </form>
         </nav>
@@ -71,6 +91,15 @@ export default function Home() {
             >
               Women&apos;s Clothing
             </Link>
+            {filter && (
+              <Link
+                href="/"
+                className="block text-gray-400 hover:text-gray-50 hover:underline mt-3"
+                prefetch={false}
+              >
+                clear filter
+              </Link>
+            )}
           </div>
         </aside>
         <main className="flex-1 p-6">
