@@ -10,6 +10,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { products } from "@/constants/products";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { ShoppingBasketIcon } from "lucide-react";
@@ -81,10 +89,29 @@ const ProductPage = () => {
                 <ShoppingBasketIcon className="w-5 h-5 -mt-1 mr-1" />
                 Add to Cart
               </Button>
-              <Button className="w-32">
-                Try on
-                <ArrowTopRightIcon className="w-4 h-4 ml-1" />
-              </Button>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button className="w-32">
+                    3D Try On
+                    <ArrowTopRightIcon className="w-4 h-4 ml-1" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>3D Try On?</SheetTitle>
+                    <SheetDescription>
+                      We&apos;re excited to show you how our clothes will look
+                      on you
+                    </SheetDescription>
+                  </SheetHeader>
+                  <iframe
+                    src="https://yisol-idm-vton.hf.space"
+                    // frameborder="0"
+                    frameBorder="0"
+                    className="w-full h-full mt-6"
+                  ></iframe>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
