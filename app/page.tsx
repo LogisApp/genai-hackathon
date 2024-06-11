@@ -1,17 +1,34 @@
+"use client";
 import ProductCard from "@/components/product-card";
 import { Input } from "@/components/ui/input";
 import { products } from "@/constants/products";
 import { SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
+
+type ProductType = (typeof products)[number];
 
 export default function Home() {
+  const searchParams = useSearchParams();
+  const filter = searchParams.get("filter");
+  const [selectedProducts, setSelectedProducts] = useState<ProductType[]>([]);
+  useEffect(() => {
+    if (!filter) {
+      setSelectedProducts(products);
+    } else {
+      setSelectedProducts(
+        products.filter((product) => product.category === filter),
+      );
+    }
+  }, [filter]);
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-white dark:bg-gray-950 py-2 pl-12 pr-6 shadow-sm border-b">
         <nav className="flex flex-row items-center justify-between w-full">
           <Link
-            href="#"
+            href="/"
             className="font-bold text-lg flex items-center gap-2 flex-col"
             prefetch={false}
           >
@@ -41,14 +58,14 @@ export default function Home() {
           </h3>
           <div className="space-y-2">
             <Link
-              href="#"
+              href="/?filter=Mens"
               className="block text-gray-400 hover:text-gray-50 hover:underline"
               prefetch={false}
             >
               Men&apos;s Clothing
             </Link>
             <Link
-              href="#"
+              href="/?filter=Womens"
               className="block text-gray-400 hover:text-gray-50 hover:underline"
               prefetch={false}
             >
@@ -58,7 +75,7 @@ export default function Home() {
         </aside>
         <main className="flex-1 p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
+            {selectedProducts.map((product) => (
               <ProductCard key={product.id} {...product} />
             ))}
           </div>
