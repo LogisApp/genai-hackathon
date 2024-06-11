@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    // allow picsum.photos
+    images: {
+        domains: ["picsum.photos"],
+    },
+}
 
 export default nextConfig
