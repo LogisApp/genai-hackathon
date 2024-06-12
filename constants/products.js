@@ -148,7 +148,7 @@ export const products = [
         name: "Bohemian Bliss Top",
         description: "Embrace a carefree spirit with this flowy bohemian top",
         price: 27.99,
-        image: "/women/tops/9.jpeg",
+        image: "/women/tops/9.jpg",
         category: "Womens"
       },
       {
@@ -156,7 +156,7 @@ export const products = [
         name: "Effortless Henley Top",
         description: "A timeless essential, this henley top is perfect for any occasion",
         price: 19.99,
-        image: "/women/tops/10.jpeg",
+        image: "/women/tops/10.jpg",
         category: "Womens"
       },
       {
@@ -172,7 +172,7 @@ export const products = [
         name: "Classic Chino Pants",
         description: "A versatile essential for any wardrobe, these chinos offer a timeless look",
         price: 29.99,
-        image: "/men/pants/1.jpg",
+        image: "/men/pants/1.jpeg",
         category: "Mens"
       },
       {
