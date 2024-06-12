@@ -260,7 +260,7 @@ export const products = [
         name: "High-Waisted Skinny Jeans",
         description: "A wardrobe essential, these high-waisted skinny jeans offer a flattering silhouette",
         price: 29.99,
-        image: "/women/pants/1.jpg",
+        image: "/women/pants/1.jpeg",
         category: "Womens"
       },
       {
@@ -268,7 +268,7 @@ export const products = [
         name: "Comfy Mom Jeans",
         description: "Relaxed and stylish, these mom jeans offer a comfortable fit",
         price: 27.99,
-        image: "/women/pants/2.jpg",
+        image: "/women/pants/2.jpeg",
         category: "Womens"
       },
       {
@@ -276,7 +276,7 @@ export const products = [
         name: "Sleek Leather Pants",
         description: "Add an edgy touch to your outfit with these sleek leather pants",
         price: 39.99,
-        image: "/women/pants/3.jpg",
+        image: "/women/pants/3.jpeg",
         category: "Womens"
       },
       {
@@ -284,7 +284,7 @@ export const products = [
         name: "Flowy Palazzo Pants",
         description: "Light and airy, these palazzo pants are perfect for summer weather",
         price: 24.99,
-        image: "/women/pants/4.jpg",
+        image: "/women/pants/4.jpeg",
         category: "Womens"
       },
       {
@@ -292,7 +292,7 @@ export const products = [
         name: "Chic Crop Pants",
         description: "A versatile option, these cropped pants can be dressed up or down",
         price: 22.99,
-        image: "/women/pants/5.jpg",
+        image: "/women/pants/5.jpeg",
         category: "Womens"
       },
       {
@@ -300,7 +300,7 @@ export const products = [
         name: "Cozy Joggers",
         description: "The ultimate in comfort, these joggers are perfect for lounging or running errands",
         price: 21.99,
-        image: "/women/pants/6.jpg",
+        image: "/women/pants/6.jpeg",
         category: "Womens"
       },
       {
@@ -308,7 +308,7 @@ export const products = [
         name: "Tailored Dress Pants",
         description: "Elevate your look with these sharp dress pants, perfect for work or formal occasions",
         price: 34.99,
-        image: "/women/pants/7.jpg",
+        image: "/women/pants/7.jpeg",
         category: "Womens"
       }
 ];
