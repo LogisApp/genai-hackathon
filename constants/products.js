@@ -167,16 +167,8 @@ export const products = [
         image: "/women/tops/11.jpeg",  // Update image path if additional images exist
         category: "Womens"
       },
-      {
-        id: "22",
-        name: "Comfy Chic Crop Top",  // Consider adding more unique names if data expands
-        description: "Effortlessly stylish, this cropped top is perfect for layering or wearing solo",
-        price: 22.50,
-        image: "/women/tops/12.jpeg",  // Update image path if additional images exist
-        category: "Womens"
-    },
     {
-        id: "23",
+        id: "22",
         name: "Classic Chino Pants",
         description: "A versatile essential for any wardrobe, these chinos offer a timeless look",
         price: 29.99,
@@ -184,7 +176,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "24",
+        id: "23",
         name: "Relaxed Fit Cargo Pants",
         description: "Functional and stylish, these cargo pants offer plenty of storage space",
         price: 34.99,
@@ -192,7 +184,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "25",
+        id: "24",
         name: "Skinny Stretch Jeans",
         description: "A modern take on a classic, these skinny jeans offer a comfortable stretch",
         price: 27.99,
@@ -200,7 +192,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "26",
+        id: "25",
         name: "Athletic Joggers",
         description: "Perfect for workouts or lounging, these joggers offer a relaxed fit and comfortable feel",
         price: 24.99,
@@ -208,7 +200,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "27",
+        id: "26",
         name: "Tailored Dress Pants",
         description: "Elevate your look with these sharp dress pants, perfect for work or formal occasions",
         price: 39.99,
@@ -216,7 +208,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "28",
+        id: "27",
         name: "Durable Cargo Shorts",
         description: "Built for adventure, these cargo shorts offer a comfortable fit and plenty of pockets",
         price: 22.99,
@@ -224,7 +216,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "29",
+        id: "28",
         name: "Classic Chino Shorts",
         description: "A versatile option for warmer weather, these chino shorts offer a timeless look",
         price: 19.99,
@@ -232,7 +224,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "30",
+        id: "29",
         name: "Relaxed Fit Sweatpants",
         description: "The ultimate in comfort, these sweatpants are perfect for lounging or running errands",
         price: 21.99,
@@ -240,7 +232,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "31",
+        id: "30",
         name: "Lightweight Linen Pants",
         description: "Stay cool and comfortable in these breathable linen pants, perfect for summer weather",
         price: 32.99,
@@ -248,7 +240,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "32",
+        id: "31",
         name: "Ripped Denim Jeans",
         description: "Add a touch of edge to your look with these ripped denim jeans",
         price: 29.99,
@@ -256,7 +248,7 @@ export const products = [
         category: "Mens"
       },
       {
-        id: "33",
+        id: "32",
         name: "Corduroy Straight Leg Pants",
         description: "A classic winter staple, these corduroy pants offer warmth and style",
         price: 34.99,
@@ -264,7 +256,7 @@ export const products = [
         category: "Mens"
     },
     {
-        id: "34",
+        id: "33",
         name: "High-Waisted Skinny Jeans",
         description: "A wardrobe essential, these high-waisted skinny jeans offer a flattering silhouette",
         price: 29.99,
@@ -272,7 +264,7 @@ export const products = [
         category: "Womens"
       },
       {
-        id: "35",
+        id: "34",
         name: "Comfy Mom Jeans",
         description: "Relaxed and stylish, these mom jeans offer a comfortable fit",
         price: 27.99,
@@ -280,7 +272,7 @@ export const products = [
         category: "Womens"
       },
       {
-        id: "36",
+        id: "35",
         name: "Sleek Leather Pants",
         description: "Add an edgy touch to your outfit with these sleek leather pants",
         price: 39.99,
@@ -288,7 +280,7 @@ export const products = [
         category: "Womens"
       },
       {
-        id: "37",
+        id: "36",
         name: "Flowy Palazzo Pants",
         description: "Light and airy, these palazzo pants are perfect for summer weather",
         price: 24.99,
@@ -296,7 +288,7 @@ export const products = [
         category: "Womens"
       },
       {
-        id: "38",
+        id: "37",
         name: "Chic Crop Pants",
         description: "A versatile option, these cropped pants can be dressed up or down",
         price: 22.99,
@@ -304,7 +296,7 @@ export const products = [
         category: "Womens"
       },
       {
-        id: "39",
+        id: "38",
         name: "Cozy Joggers",
         description: "The ultimate in comfort, these joggers are perfect for lounging or running errands",
         price: 21.99,
@@ -312,75 +304,11 @@ export const products = [
         category: "Womens"
       },
       {
-        id: "40",
+        id: "39",
         name: "Tailored Dress Pants",
         description: "Elevate your look with these sharp dress pants, perfect for work or formal occasions",
         price: 34.99,
         image: "/women/pants/7.jpg",
         category: "Womens"
-      },
-      {
-        id: "34",
-        name: "High-Waisted Skinny Jeans",
-        description: "A wardrobe essential, these high-waisted skinny jeans offer a flattering silhouette",
-        price: 29.99,
-        image: "/women/pants/1.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "35",
-        name: "Comfy Mom Jeans",
-        description: "Relaxed and stylish, these mom jeans offer a comfortable fit",
-        price: 27.99,
-        image: "/women/pants/2.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "36",
-        name: "Sleek Leather Pants",
-        description: "Add an edgy touch to your outfit with these sleek leather pants",
-        price: 39.99,
-        image: "/women/pants/3.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "37",
-        name: "Flowy Palazzo Pants",
-        description: "Light and airy, these palazzo pants are perfect for summer weather",
-        price: 24.99,
-        image: "/women/pants/4.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "38",
-        name: "Chic Crop Pants",
-        description: "A versatile option, these cropped pants can be dressed up or down",
-        price: 22.99,
-        image: "/women/pants/5.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "39",
-        name: "Cozy Joggers",
-        description: "The ultimate in comfort, these joggers are perfect for lounging or running errands",
-        price: 21.99,
-        image: "/women/pants/6.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "40",
-        name: "Tailored Dress Pants",
-        description: "Elevate your look with these sharp dress pants, perfect for work or formal occasions",
-        price: 34.99,
-        image: "/women/pants/7.jpeg",
-        category: "Womens"
-      },
-      {
-        id: "41",
-        name: "Utility Cargo Pants",  // Consider adding more unique names if data expands
-        description: "Functional and stylish, these cargo pants offer plenty of storage space",
-        price: 32.99,
-        image: "/women/pants/8.jpeg",  // Update image path if additional images exist
-        category: "Womens"
-    }
+      }
 ];
