@@ -4,7 +4,7 @@ export const products = [
         name: "Classic White Tee",
         description: "A timeless essential for any wardrobe",
         price: 19.99,
-        image: "https://picsum.photos/id/10/200",
+        image: "/men/tshirt/1.jpg",
         category: "Mens",
     },
     {
