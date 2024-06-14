@@ -31,7 +31,7 @@ const TryOnButton = () => {
       className="w-32"
       // TODO: REPLACE this with our HF Space url
       onClick={() =>
-        router.push("https://huggingface.co/spaces/Metal0bird/gen-ai-hackathon")
+        router.push("https://huggingface.co/spaces/Metal0bird/Gen-AI-hackathon-paras")
       }
     >
       3D Try On
